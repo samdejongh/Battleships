@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="LobbyCsharp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        
+        <StackPanel Orientation="Vertical">
+            
+            <ListBox SelectionChanged="ListBox_SelectionChanged_1" x:Name="lstbox">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding LobbyId}"></TextBlock>
+                        <TextBlock Text="{Binding LobbyName}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            
+            
+            <TextBlock Text="Available PlayRooms:"></TextBlock>
+            <ListBox Name="lstPlayRooms" SelectionChanged="lstPlayRooms_SelectionChanged_1">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding hostPlayer.PlayerId}"></TextBlock>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="LobbyCsharp.Web.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2013-03.2.0">
+  <Role name="LobbyCsharp.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=samdejongh;AccountKey=Iy5S5WzGBPedZzGeJjHBeCCxj/ZBFwAqeBHKV+g/oibkQDIHKNwp3X8CrXAM7l1Nt5MVjM6QxOGM6wMH7DUmdA==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

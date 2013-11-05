@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f98d03f2-3842-4b45-85f5-9b00af1afd6b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61363/LobbyService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LobbyService.wsdl" MetadataType="Wsdl" ID="866bd4d0-3e1d-4dc3-9b90-5d550223fa29" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?wsdl" />
+    <MetadataFile FileName="LobbyService.xsd" MetadataType="Schema" ID="6d2e6832-9ea2-47b0-84ce-d801c3615ffe" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?xsd=xsd1" />
+    <MetadataFile FileName="LobbyService.disco" MetadataType="Disco" ID="9e639211-8586-41e8-9015-673e4aba5692" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?disco" />
+    <MetadataFile FileName="LobbyService1.xsd" MetadataType="Schema" ID="d5af01e9-0b0f-42c5-b923-e3b1ab47c32f" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LobbyService2.xsd" MetadataType="Schema" ID="ad2f710c-793b-4955-b16e-6ed3ad758ecb" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,2 @@
+D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web.Azure\bin\Debug\ServiceConfiguration.cscfg
+D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web.Azure\bin\Debug\ServiceDefinition.csdef
