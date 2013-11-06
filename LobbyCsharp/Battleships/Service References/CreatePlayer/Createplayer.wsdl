@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Createplayer" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:61363/Createplayer.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:61363/Createplayer.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:61363/Createplayer.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LobbyCsharp.Web.DTO" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICreateplayer_GetAllPlayers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlayers" />
+  </wsdl:message>
+  <wsdl:message name="ICreateplayer_GetAllPlayers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlayersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICreateplayer_AddNewPlayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewPlayer" />
+  </wsdl:message>
+  <wsdl:message name="ICreateplayer_AddNewPlayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewPlayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICreateplayer_NewId_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewId" />
+  </wsdl:message>
+  <wsdl:message name="ICreateplayer_NewId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ICreateplayer">
+    <wsdl:operation name="GetAllPlayers">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreateplayer/GetAllPlayers" message="tns:ICreateplayer_GetAllPlayers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreateplayer/GetAllPlayersResponse" message="tns:ICreateplayer_GetAllPlayers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewPlayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreateplayer/AddNewPlayer" message="tns:ICreateplayer_AddNewPlayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreateplayer/AddNewPlayerResponse" message="tns:ICreateplayer_AddNewPlayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICreateplayer/NewId" message="tns:ICreateplayer_NewId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICreateplayer/NewIdResponse" message="tns:ICreateplayer_NewId_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICreateplayer" type="tns:ICreateplayer">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllPlayers">
+      <soap:operation soapAction="http://tempuri.org/ICreateplayer/GetAllPlayers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewPlayer">
+      <soap:operation soapAction="http://tempuri.org/ICreateplayer/AddNewPlayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewId">
+      <soap:operation soapAction="http://tempuri.org/ICreateplayer/NewId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Createplayer">
+    <wsdl:port name="BasicHttpBinding_ICreateplayer" binding="tns:BasicHttpBinding_ICreateplayer">
+      <soap:address location="http://localhost:61363/Createplayer.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

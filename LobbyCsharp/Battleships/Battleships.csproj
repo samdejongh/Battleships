@@ -67,10 +67,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="createplayer.xaml.cs">
+      <DependentUpon>createplayer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GamePanorama.xaml.cs">
       <DependentUpon>GamePanorama.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CreatePlayer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Service References\LobbyService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -82,6 +90,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="createplayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="GamePanorama.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,6 +102,16 @@
   <ItemGroup>
     <Content Include="GameLogo.png" />
     <Content Include="README_FIRST.txt" />
+    <None Include="Service References\CreatePlayer\Battleships.CreatePlayer.OPlayer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CreatePlayer\Createplayer.disco" />
+    <None Include="Service References\CreatePlayer\configuration91.svcinfo" />
+    <None Include="Service References\CreatePlayer\configuration.svcinfo" />
+    <None Include="Service References\CreatePlayer\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
     <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
@@ -102,6 +124,16 @@
     <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml" />
+    <None Include="Service References\CreatePlayer\Createplayer.wsdl" />
+    <None Include="Service References\CreatePlayer\Createplayer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CreatePlayer\Createplayer1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CreatePlayer\Createplayer2.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\LobbyService\Battleships.LobbyService.GameObject.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -148,6 +180,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CreatePlayer\" />
     <WCFMetadataStorage Include="Service References\LobbyService\" />
   </ItemGroup>
   <ItemGroup />

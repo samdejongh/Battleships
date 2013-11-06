@@ -53,7 +53,7 @@ namespace LobbyCsharp.Web
                 dc.PlayLobbies.InsertOnSubmit(pLobby);
                 dc.SubmitChanges();
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
             }
@@ -91,7 +91,7 @@ namespace LobbyCsharp.Web
                 dc.PlayLobbies.InsertOnSubmit(pLobby);
                 dc.SubmitChanges();
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
             }
@@ -132,7 +132,7 @@ namespace LobbyCsharp.Web
                 dc.PlayLobbies.InsertOnSubmit(pLobby);
                 dc.SubmitChanges();
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
             }

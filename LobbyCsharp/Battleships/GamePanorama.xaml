@@ -27,7 +27,7 @@
             <controls:PanoramaItem Header="Player screen">
                 <Grid>
                     <StackPanel Grid.Row="0" Margin="12,17,0,28">
-                        <Button x:Name="btnCreatePlayer">Create Player</Button>
+                        <Button x:Name="btnCreatePlayer" Click="btnCreatePlayer_Click">Create Player</Button>
                         <Button x:Name="btnUseExistingPlayer">Use existing player</Button>
                         <TextBox Text="Enter Player Name"></TextBox>
                     </StackPanel>

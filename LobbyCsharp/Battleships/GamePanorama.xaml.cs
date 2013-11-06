@@ -125,5 +125,10 @@ namespace Battleships
             }
             lstPlayerField.ItemsSource = YourField;
         }
+
+        private void btnCreatePlayer_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/createplayer.xaml", UriKind.Relative));
+        }
     }
 }

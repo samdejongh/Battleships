@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="LobbyCsharp.Web.Createplayer" CodeBehind="Createplayer.svc.cs" %>
