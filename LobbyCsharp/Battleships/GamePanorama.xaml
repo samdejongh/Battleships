@@ -7,6 +7,8 @@
     xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:toolkit="clr-namespace:System;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:controls3="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
     mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
@@ -55,10 +57,19 @@
                     <ListBox x:Name="lstPlayerField" Height="400" Width="400" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
+                                
                                 <Image Width="40" Height="40" Source="{Binding image}" ></Image>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
-                   </ListBox>
+                        <ListBox.ItemsPanel>
+                            
+                            <ItemsPanelTemplate>
+                                
+                                <controls3:WrapPanel Width="440"  />
+                                
+                            </ItemsPanelTemplate>
+</ListBox.ItemsPanel>
+                    </ListBox>
                 </Grid>
             </controls:PanoramaItem>
 

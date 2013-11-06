@@ -21,8 +21,7 @@ namespace Battleships
         public enum FieldType {Water,Ship,Miss,Hit};
         public ObservableCollection<Field> YourField{ get; set; }
         public ObservableCollection<Field> OpponentsField { get; set; }
-
-
+        
 
         // Constructor
         public GamePanorama()
