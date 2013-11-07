@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Battleships" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=y9xt95kejc.database.windows.net;Initial Catalog=Battleships;Persist Security Info=True;User ID=samartesis" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BattleshipsConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=y9xt95kejc.database.windows.net;Initial Catalog=Battleships;Persist Security Info=True;User ID=samartesis" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="BattleshipsConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Lobby" Member="Lobbies">
     <Type Name="Lobby">
       <Column Name="LobbyId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

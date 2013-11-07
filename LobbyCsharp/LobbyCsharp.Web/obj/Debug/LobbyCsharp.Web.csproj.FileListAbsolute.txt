@@ -94,4 +94,3 @@ C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ko
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ru\System.Spatial.resources.dll
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.csprojResolveAssemblyReference.cache

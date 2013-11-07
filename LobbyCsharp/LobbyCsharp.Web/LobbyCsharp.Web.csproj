@@ -95,7 +95,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientBin\LobbyCsharp.xap" />
-    <Content Include="Createplayer.svc" />
     <Content Include="LobbyCsharpTestPage.aspx" />
     <Content Include="LobbyCsharpTestPage.html" />
     <Content Include="LobbyService.svc" />
@@ -103,9 +102,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Createplayer.svc.cs">
-      <DependentUpon>Createplayer.svc</DependentUpon>
-    </Compile>
     <Compile Include="DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -115,7 +111,6 @@
     <Compile Include="DTO\Lobby.cs" />
     <Compile Include="DTO\LobbyRoom.cs" />
     <Compile Include="DTO\Player.cs" />
-    <Compile Include="ICreateplayer.cs" />
     <Compile Include="ILobbyService.cs" />
     <Compile Include="LobbyService.svc.cs">
       <DependentUpon>LobbyService.svc</DependentUpon>

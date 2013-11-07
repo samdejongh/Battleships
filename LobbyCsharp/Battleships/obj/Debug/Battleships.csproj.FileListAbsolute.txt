@@ -74,4 +74,3 @@ C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\Battleships.dll
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\Battleships.pdb
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\XapCacheFile.xml
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\Battleships.csprojResolveAssemblyReference.cache

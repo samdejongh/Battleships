@@ -13,48 +13,35 @@ namespace Battleships
 {
     public partial class createplayer : PhoneApplicationPage
     {
-        public CreatePlayer.CreateplayerClient client;
+        public ServiceCloud.LobbyServiceClient client;
         public bool playerexists = false;
-        public List<string> ExestingPLayerList { get; set; }
+        public List<string> ExistingPLayerList { get; set; }
         public string NewLoginName { get; set; }
         public string NewPassword { get; set; }
         public int NewId { get; set; }
+       
         public createplayer()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            ExistingPLayerList = new List<string>();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+            client = new ServiceCloud.LobbyServiceClient();
+       
+
             NewLoginName = newLogintbx.Text;
             NewPassword = newPasswordtbx.Text;
 
 
             client.GetAllPlayersCompleted += client_GetAllPlayersCompleted;
             client.GetAllPlayersAsync();
-
-            foreach (var item in ExestingPLayerList)
-            {
-                if (item == NewLoginName)
-                {
-                    MessageBox.Show("Username Already exists");
-                    playerexists = true;
-                }
-            }
-            if (playerexists == false)
-            {
-                client.AddNewPlayerCompleted += client_AddNewPlayerCompleted;
-                client.NewIdAsync();
-
-                client.NewIdCompleted += client_NewIdCompleted;
-                client.AddNewPlayerAsync(NewId, NewLoginName);
-            }
-            MessageBox.Show("jep");
-
             
         }
 
-        void client_NewIdCompleted(object sender, CreatePlayer.NewIdCompletedEventArgs e)
+        void client_NewIdCompleted(object sender, ServiceCloud.NewIdCompletedEventArgs e)
         {
             NewId = e.Result;
         }
@@ -67,12 +54,35 @@ namespace Battleships
             }
         }
 
-        void client_GetAllPlayersCompleted(object sender, CreatePlayer.GetAllPlayersCompletedEventArgs e)
+        void client_GetAllPlayersCompleted(object sender, ServiceCloud.GetAllPlayersCompletedEventArgs e)
         {
             foreach (var item in e.Result)
-                ExestingPLayerList.Add(item.ToString());
-           // List<CreatePlayer.OPlayer> AllPlayerNamesList = e.Result.ToList();
-            
+                ExistingPLayerList.Add(item);
+
+           //List<CreatePlayer.OPlayer> AllPlayerNamesList = e.Result.ToList();
+
+            foreach (var item in ExistingPLayerList)
+            {
+                if (playerexists == false)
+                {
+                    if (item.Replace(" ", string.Empty) == NewLoginName)
+                    {
+                        MessageBox.Show("Username Already exists");
+                        playerexists = true;
+                        NavigationService.Navigate(new Uri("/GamePanorama.xaml", UriKind.Relative));
+                    }
+                }                
+            }
+            if (playerexists == false)
+            {
+                client.AddNewPlayerCompleted += client_AddNewPlayerCompleted;
+                client.NewIdAsync();
+
+                client.NewIdCompleted += client_NewIdCompleted;
+                client.AddNewPlayerAsync(NewId, NewLoginName);
+                NavigationService.Navigate(new Uri("/GamePanorama.xaml", UriKind.Relative));
+                //playerexists = true;
+            }
 
         }
     }

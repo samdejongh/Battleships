@@ -28,8 +28,8 @@
                 <Grid>
                     <StackPanel Grid.Row="0" Margin="12,17,0,28">
                         <Button x:Name="btnCreatePlayer" Click="btnCreatePlayer_Click">Create Player</Button>
-                        <Button x:Name="btnUseExistingPlayer">Use existing player</Button>
-                        <TextBox Text="Enter Player Name"></TextBox>
+                        <Button x:Name="btnUseExistingPlayer" Click="btnUseExistingPlayer_Click">Use existing player</Button>
+                        <TextBox x:Name="exstplyrbox" Text="Enter Player Name"></TextBox>
                     </StackPanel>
                 </Grid>
             </controls:PanoramaItem>
@@ -41,7 +41,7 @@
             <controls:PanoramaItem Header="Lobby room">
                 <Grid>
                     <StackPanel Grid.Row="0">
-                        <Button x:Name="btnCheckforlobies" Click="btnCheckforlobies_Click">Check for lobies</Button>
+                        <Button x:Name="btnCheckforlobies" Click="btnCheckforlobies_Click" IsEnabled="False">Check for lobies</Button>
                         <TextBox Text="Available rooms" ></TextBox>
                         <ListBox x:Name="lstPlayRooms" Height="150"></ListBox>
                         <TextBox Text="Member in currently selected room"></TextBox>

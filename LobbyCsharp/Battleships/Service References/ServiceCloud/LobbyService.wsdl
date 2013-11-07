@@ -5,6 +5,7 @@
       <xsd:import schemaLocation="http://battleshipsservice.cloudapp.net/LobbyService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://battleshipsservice.cloudapp.net/LobbyService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://battleshipsservice.cloudapp.net/LobbyService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/LobbyCsharp.Web.DTO" />
+      <xsd:import schemaLocation="http://battleshipsservice.cloudapp.net/LobbyService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="ILobbyService_GetAvailableRooms_InputMessage">
@@ -49,6 +50,24 @@
   <wsdl:message name="ILobbyService_SendGameUpdate_OutputMessage">
     <wsdl:part name="parameters" element="tns:SendGameUpdateResponse" />
   </wsdl:message>
+  <wsdl:message name="ILobbyService_GetAllPlayers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlayers" />
+  </wsdl:message>
+  <wsdl:message name="ILobbyService_GetAllPlayers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPlayersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILobbyService_AddNewPlayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewPlayer" />
+  </wsdl:message>
+  <wsdl:message name="ILobbyService_AddNewPlayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddNewPlayerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILobbyService_NewId_InputMessage">
+    <wsdl:part name="parameters" element="tns:NewId" />
+  </wsdl:message>
+  <wsdl:message name="ILobbyService_NewId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:NewIdResponse" />
+  </wsdl:message>
   <wsdl:portType name="ILobbyService">
     <wsdl:operation name="GetAvailableRooms">
       <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/GetAvailableRooms" message="tns:ILobbyService_GetAvailableRooms_InputMessage" />
@@ -77,6 +96,18 @@
     <wsdl:operation name="SendGameUpdate">
       <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/SendGameUpdate" message="tns:ILobbyService_SendGameUpdate_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/SendGameUpdateResponse" message="tns:ILobbyService_SendGameUpdate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPlayers">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/GetAllPlayers" message="tns:ILobbyService_GetAllPlayers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/GetAllPlayersResponse" message="tns:ILobbyService_GetAllPlayers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddNewPlayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/AddNewPlayer" message="tns:ILobbyService_AddNewPlayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/AddNewPlayerResponse" message="tns:ILobbyService_AddNewPlayer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="NewId">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/NewId" message="tns:ILobbyService_NewId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/NewIdResponse" message="tns:ILobbyService_NewId_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ILobbyService" type="tns:ILobbyService">
@@ -137,6 +168,33 @@
     </wsdl:operation>
     <wsdl:operation name="SendGameUpdate">
       <soap:operation soapAction="http://tempuri.org/ILobbyService/SendGameUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPlayers">
+      <soap:operation soapAction="http://tempuri.org/ILobbyService/GetAllPlayers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddNewPlayer">
+      <soap:operation soapAction="http://tempuri.org/ILobbyService/AddNewPlayer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="NewId">
+      <soap:operation soapAction="http://tempuri.org/ILobbyService/NewId" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
