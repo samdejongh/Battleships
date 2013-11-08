@@ -167,9 +167,9 @@ namespace Battleships
                 MessageBox.Show("Logged In");
                 btnCheckforlobies.IsEnabled = true;
                 client.CurrentPlayerCompleted += client_CurrentPlayerCompleted;
-                
-                inlogscreen.IsEnabled = false;
-                lobbyscreen.IsEnabled = true;
+
+                inlogscreen.Visibility = System.Windows.Visibility.Collapsed;
+                lobbyscreen.Visibility = System.Windows.Visibility.Visible;
             }
             else
             {
