@@ -30,14 +30,14 @@
     <Property name="Configuration" value="Release" />
     <Property name="Platform" value="AnyCPU" />
     <Property name="RoleTargetFramework" value="v4.5" />
-    <Property name="OutputDir" value="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web.Azure\obj\Release\LobbyCsharp.Web\" />
+    <Property name="OutputDir" value="C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web.Azure\obj\Release\LobbyCsharp.Web\" />
     <Property name="EntryPoint" value="LobbyCsharp.Web.dll" />
-    <Property name="SourceDir" value="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web\" />
-    <Property name="SitePhysicalPath" value="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web.Azure\obj\Release\LobbyCsharp.Web\" />
+    <Property name="SourceDir" value="C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web\" />
+    <Property name="SitePhysicalPath" value="C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web.Azure\obj\Release\LobbyCsharp.Web\" />
     <Property name="TargetRuntimeVersion" value="v4.0" />
   </Properties>
   <Sites>
-    <Site name="Web" physicalDirectory="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web.Azure\obj\Release\LobbyCsharp.Web\">
+    <Site name="Web" physicalDirectory="C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web.Azure\obj\Release\LobbyCsharp.Web\">
       <Bindings>
         <Binding name="Endpoint1" endpointName="Endpoint1" />
       </Bindings>

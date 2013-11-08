@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 ﻿<xapCache source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="7/11/2013 10:57:47">
   <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.dll" archivePath="LobbyCsharp.dll" lastWriteTime="7/11/2013 10:57:47" />
   <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="16/10/2013 17:27:48" />
   <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="4/11/2013 19:02:22" />
+=======
+﻿<xapCache source="C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="7/11/2013 13:18:22">
+  <file source="C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.dll" archivePath="LobbyCsharp.dll" lastWriteTime="7/11/2013 13:18:21" />
+  <file source="C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="7/11/2013 9:23:22" />
+  <file source="C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="7/11/2013 13:18:22" />
+>>>>>>> refs/remotes/origin/Vincent
 </xapCache>
