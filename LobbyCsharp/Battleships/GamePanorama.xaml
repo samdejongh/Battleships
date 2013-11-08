@@ -24,12 +24,14 @@
         <controls:Panorama Title="Battleships">
 
             <!--Panorama item one-->
-            <controls:PanoramaItem Header="Player screen">
+            <controls:PanoramaItem x:Name="inlogscreen" Header="Player screen" IsEnabled="true">
                 <Grid>
                     <StackPanel Grid.Row="0" Margin="12,17,0,28">
                         <Button x:Name="btnCreatePlayer" Click="btnCreatePlayer_Click">Create Player</Button>
                         <Button x:Name="btnUseExistingPlayer" Click="btnUseExistingPlayer_Click">Use existing player</Button>
-                        <TextBox x:Name="exstplyrbox" Text="Enter Player Name"></TextBox>
+                        <TextBox x:Name="exstplyrbox" Text="Enter Player Name" Tap="exstplyrbox_Tap"></TextBox>
+                        <TextBox x:Name="passwordbox" Text="Enter Password" ></TextBox>
+
                     </StackPanel>
                 </Grid>
             </controls:PanoramaItem>
@@ -38,7 +40,7 @@
 
 
             <!--Panorama item two-->
-            <controls:PanoramaItem Header="Lobby room">
+            <controls:PanoramaItem x:Name="lobbyscreen" Header="Lobby room" IsEnabled="False">
                 <Grid>
                     <StackPanel Grid.Row="0">
                         <Button x:Name="btnCheckforlobies" Click="btnCheckforlobies_Click" IsEnabled="False">Check for lobies</Button>
@@ -52,7 +54,7 @@
             </controls:PanoramaItem>
             
             <!--Panorama item three-->
-            <controls:PanoramaItem Header="Your field">
+            <controls:PanoramaItem x:Name="gamescreen" Header="Your field" IsEnabled="False">
                 <Grid>
                     <ListBox x:Name="lstPlayerField" Height="400" Width="400" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                         <ListBox.ItemTemplate>
@@ -74,7 +76,7 @@
             </controls:PanoramaItem>
 
             <!--Panorama item four-->
-            <controls:PanoramaItem Header="Enemy's field">
+            <controls:PanoramaItem IsEnabled="False" x:Name="gamescreen2" Header="Enemy's field">
             </controls:PanoramaItem>
 
         </controls:Panorama>

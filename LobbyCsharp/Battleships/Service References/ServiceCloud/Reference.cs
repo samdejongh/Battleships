@@ -65,9 +65,24 @@ namespace Battleships.ServiceCloud {
     [System.Runtime.Serialization.DataContractAttribute(Name="OPlayer", Namespace="http://schemas.datacontract.org/2004/07/LobbyCsharp.Web.DTO")]
     public partial class OPlayer : object, System.ComponentModel.INotifyPropertyChanged {
         
+        private string GameStateField;
+        
         private int PlayerIdField;
         
         private string PlayerNameField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string GameState {
+            get {
+                return this.GameStateField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.GameStateField, value) != true)) {
+                    this.GameStateField = value;
+                    this.RaisePropertyChanged("GameState");
+                }
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public int PlayerId {
@@ -209,11 +224,6 @@ namespace Battleships.ServiceCloud {
         
         void EndStartPlay(System.IAsyncResult result);
         
-        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILobbyService/GetPlayer", ReplyAction="http://tempuri.org/ILobbyService/GetPlayerResponse")]
-        System.IAsyncResult BeginGetPlayer(int id, System.AsyncCallback callback, object asyncState);
-        
-        Battleships.ServiceCloud.OPlayer EndGetPlayer(System.IAsyncResult result);
-        
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILobbyService/SendGameUpdate", ReplyAction="http://tempuri.org/ILobbyService/SendGameUpdateResponse")]
         System.IAsyncResult BeginSendGameUpdate(Battleships.ServiceCloud.OPlayer player, System.AsyncCallback callback, object asyncState);
         
@@ -233,6 +243,21 @@ namespace Battleships.ServiceCloud {
         System.IAsyncResult BeginNewId(System.AsyncCallback callback, object asyncState);
         
         int EndNewId(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILobbyService/whichGameState", ReplyAction="http://tempuri.org/ILobbyService/whichGameStateResponse")]
+        System.IAsyncResult BeginwhichGameState(string PlayerNameName, System.AsyncCallback callback, object asyncState);
+        
+        string EndwhichGameState(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILobbyService/LoggIn", ReplyAction="http://tempuri.org/ILobbyService/LoggInResponse")]
+        System.IAsyncResult BeginLoggIn(string Name, string Paswoord, System.AsyncCallback callback, object asyncState);
+        
+        bool EndLoggIn(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILobbyService/CurrentPlayer", ReplyAction="http://tempuri.org/ILobbyService/CurrentPlayerResponse")]
+        System.IAsyncResult BeginCurrentPlayer(string name, System.AsyncCallback callback, object asyncState);
+        
+        Battleships.ServiceCloud.OPlayer EndCurrentPlayer(System.IAsyncResult result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -273,25 +298,6 @@ namespace Battleships.ServiceCloud {
             get {
                 base.RaiseExceptionIfNecessary();
                 return ((System.Collections.ObjectModel.ObservableCollection<Battleships.ServiceCloud.OLobbyRoom>)(this.results[0]));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class GetPlayerCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        public GetPlayerCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        public Battleships.ServiceCloud.OPlayer Result {
-            get {
-                base.RaiseExceptionIfNecessary();
-                return ((Battleships.ServiceCloud.OPlayer)(this.results[0]));
             }
         }
     }
@@ -355,6 +361,63 @@ namespace Battleships.ServiceCloud {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class whichGameStateCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public whichGameStateCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public string Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((string)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class LoggInCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public LoggInCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class CurrentPlayerCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public CurrentPlayerCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public Battleships.ServiceCloud.OPlayer Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((Battleships.ServiceCloud.OPlayer)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class LobbyServiceClient : System.ServiceModel.ClientBase<Battleships.ServiceCloud.ILobbyService>, Battleships.ServiceCloud.ILobbyService {
         
         private BeginOperationDelegate onBeginGetAvailableRoomsDelegate;
@@ -387,12 +450,6 @@ namespace Battleships.ServiceCloud {
         
         private System.Threading.SendOrPostCallback onStartPlayCompletedDelegate;
         
-        private BeginOperationDelegate onBeginGetPlayerDelegate;
-        
-        private EndOperationDelegate onEndGetPlayerDelegate;
-        
-        private System.Threading.SendOrPostCallback onGetPlayerCompletedDelegate;
-        
         private BeginOperationDelegate onBeginSendGameUpdateDelegate;
         
         private EndOperationDelegate onEndSendGameUpdateDelegate;
@@ -416,6 +473,24 @@ namespace Battleships.ServiceCloud {
         private EndOperationDelegate onEndNewIdDelegate;
         
         private System.Threading.SendOrPostCallback onNewIdCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginwhichGameStateDelegate;
+        
+        private EndOperationDelegate onEndwhichGameStateDelegate;
+        
+        private System.Threading.SendOrPostCallback onwhichGameStateCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginLoggInDelegate;
+        
+        private EndOperationDelegate onEndLoggInDelegate;
+        
+        private System.Threading.SendOrPostCallback onLoggInCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginCurrentPlayerDelegate;
+        
+        private EndOperationDelegate onEndCurrentPlayerDelegate;
+        
+        private System.Threading.SendOrPostCallback onCurrentPlayerCompletedDelegate;
         
         private BeginOperationDelegate onBeginOpenDelegate;
         
@@ -480,8 +555,6 @@ namespace Battleships.ServiceCloud {
         
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> StartPlayCompleted;
         
-        public event System.EventHandler<GetPlayerCompletedEventArgs> GetPlayerCompleted;
-        
         public event System.EventHandler<SendGameUpdateCompletedEventArgs> SendGameUpdateCompleted;
         
         public event System.EventHandler<GetAllPlayersCompletedEventArgs> GetAllPlayersCompleted;
@@ -489,6 +562,12 @@ namespace Battleships.ServiceCloud {
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> AddNewPlayerCompleted;
         
         public event System.EventHandler<NewIdCompletedEventArgs> NewIdCompleted;
+        
+        public event System.EventHandler<whichGameStateCompletedEventArgs> whichGameStateCompleted;
+        
+        public event System.EventHandler<LoggInCompletedEventArgs> LoggInCompleted;
+        
+        public event System.EventHandler<CurrentPlayerCompletedEventArgs> CurrentPlayerCompleted;
         
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> OpenCompleted;
         
@@ -724,52 +803,6 @@ namespace Battleships.ServiceCloud {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult Battleships.ServiceCloud.ILobbyService.BeginGetPlayer(int id, System.AsyncCallback callback, object asyncState) {
-            return base.Channel.BeginGetPlayer(id, callback, asyncState);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Battleships.ServiceCloud.OPlayer Battleships.ServiceCloud.ILobbyService.EndGetPlayer(System.IAsyncResult result) {
-            return base.Channel.EndGetPlayer(result);
-        }
-        
-        private System.IAsyncResult OnBeginGetPlayer(object[] inValues, System.AsyncCallback callback, object asyncState) {
-            int id = ((int)(inValues[0]));
-            return ((Battleships.ServiceCloud.ILobbyService)(this)).BeginGetPlayer(id, callback, asyncState);
-        }
-        
-        private object[] OnEndGetPlayer(System.IAsyncResult result) {
-            Battleships.ServiceCloud.OPlayer retVal = ((Battleships.ServiceCloud.ILobbyService)(this)).EndGetPlayer(result);
-            return new object[] {
-                    retVal};
-        }
-        
-        private void OnGetPlayerCompleted(object state) {
-            if ((this.GetPlayerCompleted != null)) {
-                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
-                this.GetPlayerCompleted(this, new GetPlayerCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
-            }
-        }
-        
-        public void GetPlayerAsync(int id) {
-            this.GetPlayerAsync(id, null);
-        }
-        
-        public void GetPlayerAsync(int id, object userState) {
-            if ((this.onBeginGetPlayerDelegate == null)) {
-                this.onBeginGetPlayerDelegate = new BeginOperationDelegate(this.OnBeginGetPlayer);
-            }
-            if ((this.onEndGetPlayerDelegate == null)) {
-                this.onEndGetPlayerDelegate = new EndOperationDelegate(this.OnEndGetPlayer);
-            }
-            if ((this.onGetPlayerCompletedDelegate == null)) {
-                this.onGetPlayerCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetPlayerCompleted);
-            }
-            base.InvokeAsync(this.onBeginGetPlayerDelegate, new object[] {
-                        id}, this.onEndGetPlayerDelegate, this.onGetPlayerCompletedDelegate, userState);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.IAsyncResult Battleships.ServiceCloud.ILobbyService.BeginSendGameUpdate(Battleships.ServiceCloud.OPlayer player, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BeginSendGameUpdate(player, callback, asyncState);
         }
@@ -950,6 +983,146 @@ namespace Battleships.ServiceCloud {
             base.InvokeAsync(this.onBeginNewIdDelegate, null, this.onEndNewIdDelegate, this.onNewIdCompletedDelegate, userState);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult Battleships.ServiceCloud.ILobbyService.BeginwhichGameState(string PlayerNameName, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginwhichGameState(PlayerNameName, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        string Battleships.ServiceCloud.ILobbyService.EndwhichGameState(System.IAsyncResult result) {
+            return base.Channel.EndwhichGameState(result);
+        }
+        
+        private System.IAsyncResult OnBeginwhichGameState(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string PlayerNameName = ((string)(inValues[0]));
+            return ((Battleships.ServiceCloud.ILobbyService)(this)).BeginwhichGameState(PlayerNameName, callback, asyncState);
+        }
+        
+        private object[] OnEndwhichGameState(System.IAsyncResult result) {
+            string retVal = ((Battleships.ServiceCloud.ILobbyService)(this)).EndwhichGameState(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnwhichGameStateCompleted(object state) {
+            if ((this.whichGameStateCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.whichGameStateCompleted(this, new whichGameStateCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void whichGameStateAsync(string PlayerNameName) {
+            this.whichGameStateAsync(PlayerNameName, null);
+        }
+        
+        public void whichGameStateAsync(string PlayerNameName, object userState) {
+            if ((this.onBeginwhichGameStateDelegate == null)) {
+                this.onBeginwhichGameStateDelegate = new BeginOperationDelegate(this.OnBeginwhichGameState);
+            }
+            if ((this.onEndwhichGameStateDelegate == null)) {
+                this.onEndwhichGameStateDelegate = new EndOperationDelegate(this.OnEndwhichGameState);
+            }
+            if ((this.onwhichGameStateCompletedDelegate == null)) {
+                this.onwhichGameStateCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnwhichGameStateCompleted);
+            }
+            base.InvokeAsync(this.onBeginwhichGameStateDelegate, new object[] {
+                        PlayerNameName}, this.onEndwhichGameStateDelegate, this.onwhichGameStateCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult Battleships.ServiceCloud.ILobbyService.BeginLoggIn(string Name, string Paswoord, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginLoggIn(Name, Paswoord, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        bool Battleships.ServiceCloud.ILobbyService.EndLoggIn(System.IAsyncResult result) {
+            return base.Channel.EndLoggIn(result);
+        }
+        
+        private System.IAsyncResult OnBeginLoggIn(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string Name = ((string)(inValues[0]));
+            string Paswoord = ((string)(inValues[1]));
+            return ((Battleships.ServiceCloud.ILobbyService)(this)).BeginLoggIn(Name, Paswoord, callback, asyncState);
+        }
+        
+        private object[] OnEndLoggIn(System.IAsyncResult result) {
+            bool retVal = ((Battleships.ServiceCloud.ILobbyService)(this)).EndLoggIn(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnLoggInCompleted(object state) {
+            if ((this.LoggInCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.LoggInCompleted(this, new LoggInCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void LoggInAsync(string Name, string Paswoord) {
+            this.LoggInAsync(Name, Paswoord, null);
+        }
+        
+        public void LoggInAsync(string Name, string Paswoord, object userState) {
+            if ((this.onBeginLoggInDelegate == null)) {
+                this.onBeginLoggInDelegate = new BeginOperationDelegate(this.OnBeginLoggIn);
+            }
+            if ((this.onEndLoggInDelegate == null)) {
+                this.onEndLoggInDelegate = new EndOperationDelegate(this.OnEndLoggIn);
+            }
+            if ((this.onLoggInCompletedDelegate == null)) {
+                this.onLoggInCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnLoggInCompleted);
+            }
+            base.InvokeAsync(this.onBeginLoggInDelegate, new object[] {
+                        Name,
+                        Paswoord}, this.onEndLoggInDelegate, this.onLoggInCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult Battleships.ServiceCloud.ILobbyService.BeginCurrentPlayer(string name, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginCurrentPlayer(name, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Battleships.ServiceCloud.OPlayer Battleships.ServiceCloud.ILobbyService.EndCurrentPlayer(System.IAsyncResult result) {
+            return base.Channel.EndCurrentPlayer(result);
+        }
+        
+        private System.IAsyncResult OnBeginCurrentPlayer(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string name = ((string)(inValues[0]));
+            return ((Battleships.ServiceCloud.ILobbyService)(this)).BeginCurrentPlayer(name, callback, asyncState);
+        }
+        
+        private object[] OnEndCurrentPlayer(System.IAsyncResult result) {
+            Battleships.ServiceCloud.OPlayer retVal = ((Battleships.ServiceCloud.ILobbyService)(this)).EndCurrentPlayer(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnCurrentPlayerCompleted(object state) {
+            if ((this.CurrentPlayerCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.CurrentPlayerCompleted(this, new CurrentPlayerCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void CurrentPlayerAsync(string name) {
+            this.CurrentPlayerAsync(name, null);
+        }
+        
+        public void CurrentPlayerAsync(string name, object userState) {
+            if ((this.onBeginCurrentPlayerDelegate == null)) {
+                this.onBeginCurrentPlayerDelegate = new BeginOperationDelegate(this.OnBeginCurrentPlayer);
+            }
+            if ((this.onEndCurrentPlayerDelegate == null)) {
+                this.onEndCurrentPlayerDelegate = new EndOperationDelegate(this.OnEndCurrentPlayer);
+            }
+            if ((this.onCurrentPlayerCompletedDelegate == null)) {
+                this.onCurrentPlayerCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnCurrentPlayerCompleted);
+            }
+            base.InvokeAsync(this.onBeginCurrentPlayerDelegate, new object[] {
+                        name}, this.onEndCurrentPlayerDelegate, this.onCurrentPlayerCompletedDelegate, userState);
+        }
+        
         private System.IAsyncResult OnBeginOpen(object[] inValues, System.AsyncCallback callback, object asyncState) {
             return ((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(callback, asyncState);
         }
@@ -1089,19 +1262,6 @@ namespace Battleships.ServiceCloud {
                 base.EndInvoke("StartPlay", _args, result);
             }
             
-            public System.IAsyncResult BeginGetPlayer(int id, System.AsyncCallback callback, object asyncState) {
-                object[] _args = new object[1];
-                _args[0] = id;
-                System.IAsyncResult _result = base.BeginInvoke("GetPlayer", _args, callback, asyncState);
-                return _result;
-            }
-            
-            public Battleships.ServiceCloud.OPlayer EndGetPlayer(System.IAsyncResult result) {
-                object[] _args = new object[0];
-                Battleships.ServiceCloud.OPlayer _result = ((Battleships.ServiceCloud.OPlayer)(base.EndInvoke("GetPlayer", _args, result)));
-                return _result;
-            }
-            
             public System.IAsyncResult BeginSendGameUpdate(Battleships.ServiceCloud.OPlayer player, System.AsyncCallback callback, object asyncState) {
                 object[] _args = new object[1];
                 _args[0] = player;
@@ -1149,6 +1309,46 @@ namespace Battleships.ServiceCloud {
             public int EndNewId(System.IAsyncResult result) {
                 object[] _args = new object[0];
                 int _result = ((int)(base.EndInvoke("NewId", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginwhichGameState(string PlayerNameName, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = PlayerNameName;
+                System.IAsyncResult _result = base.BeginInvoke("whichGameState", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public string EndwhichGameState(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                string _result = ((string)(base.EndInvoke("whichGameState", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginLoggIn(string Name, string Paswoord, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[2];
+                _args[0] = Name;
+                _args[1] = Paswoord;
+                System.IAsyncResult _result = base.BeginInvoke("LoggIn", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public bool EndLoggIn(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                bool _result = ((bool)(base.EndInvoke("LoggIn", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginCurrentPlayer(string name, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = name;
+                System.IAsyncResult _result = base.BeginInvoke("CurrentPlayer", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public Battleships.ServiceCloud.OPlayer EndCurrentPlayer(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                Battleships.ServiceCloud.OPlayer _result = ((Battleships.ServiceCloud.OPlayer)(base.EndInvoke("CurrentPlayer", _args, result)));
                 return _result;
             }
         }

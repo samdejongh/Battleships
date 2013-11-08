@@ -38,12 +38,6 @@
   <wsdl:message name="ILobbyService_StartPlay_OutputMessage">
     <wsdl:part name="parameters" element="tns:StartPlayResponse" />
   </wsdl:message>
-  <wsdl:message name="ILobbyService_GetPlayer_InputMessage">
-    <wsdl:part name="parameters" element="tns:GetPlayer" />
-  </wsdl:message>
-  <wsdl:message name="ILobbyService_GetPlayer_OutputMessage">
-    <wsdl:part name="parameters" element="tns:GetPlayerResponse" />
-  </wsdl:message>
   <wsdl:message name="ILobbyService_SendGameUpdate_InputMessage">
     <wsdl:part name="parameters" element="tns:SendGameUpdate" />
   </wsdl:message>
@@ -68,6 +62,24 @@
   <wsdl:message name="ILobbyService_NewId_OutputMessage">
     <wsdl:part name="parameters" element="tns:NewIdResponse" />
   </wsdl:message>
+  <wsdl:message name="ILobbyService_whichGameState_InputMessage">
+    <wsdl:part name="parameters" element="tns:whichGameState" />
+  </wsdl:message>
+  <wsdl:message name="ILobbyService_whichGameState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:whichGameStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILobbyService_LoggIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoggIn" />
+  </wsdl:message>
+  <wsdl:message name="ILobbyService_LoggIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoggInResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILobbyService_CurrentPlayer_InputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentPlayer" />
+  </wsdl:message>
+  <wsdl:message name="ILobbyService_CurrentPlayer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentPlayerResponse" />
+  </wsdl:message>
   <wsdl:portType name="ILobbyService">
     <wsdl:operation name="GetAvailableRooms">
       <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/GetAvailableRooms" message="tns:ILobbyService_GetAvailableRooms_InputMessage" />
@@ -89,10 +101,6 @@
       <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/StartPlay" message="tns:ILobbyService_StartPlay_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/StartPlayResponse" message="tns:ILobbyService_StartPlay_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="GetPlayer">
-      <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/GetPlayer" message="tns:ILobbyService_GetPlayer_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/GetPlayerResponse" message="tns:ILobbyService_GetPlayer_OutputMessage" />
-    </wsdl:operation>
     <wsdl:operation name="SendGameUpdate">
       <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/SendGameUpdate" message="tns:ILobbyService_SendGameUpdate_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/SendGameUpdateResponse" message="tns:ILobbyService_SendGameUpdate_OutputMessage" />
@@ -108,6 +116,18 @@
     <wsdl:operation name="NewId">
       <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/NewId" message="tns:ILobbyService_NewId_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/NewIdResponse" message="tns:ILobbyService_NewId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="whichGameState">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/whichGameState" message="tns:ILobbyService_whichGameState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/whichGameStateResponse" message="tns:ILobbyService_whichGameState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoggIn">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/LoggIn" message="tns:ILobbyService_LoggIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/LoggInResponse" message="tns:ILobbyService_LoggIn_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CurrentPlayer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILobbyService/CurrentPlayer" message="tns:ILobbyService_CurrentPlayer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILobbyService/CurrentPlayerResponse" message="tns:ILobbyService_CurrentPlayer_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ILobbyService" type="tns:ILobbyService">
@@ -157,15 +177,6 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="GetPlayer">
-      <soap:operation soapAction="http://tempuri.org/ILobbyService/GetPlayer" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="SendGameUpdate">
       <soap:operation soapAction="http://tempuri.org/ILobbyService/SendGameUpdate" style="document" />
       <wsdl:input>
@@ -195,6 +206,33 @@
     </wsdl:operation>
     <wsdl:operation name="NewId">
       <soap:operation soapAction="http://tempuri.org/ILobbyService/NewId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="whichGameState">
+      <soap:operation soapAction="http://tempuri.org/ILobbyService/whichGameState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoggIn">
+      <soap:operation soapAction="http://tempuri.org/ILobbyService/LoggIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CurrentPlayer">
+      <soap:operation soapAction="http://tempuri.org/ILobbyService/CurrentPlayer" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

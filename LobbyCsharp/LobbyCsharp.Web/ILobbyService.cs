@@ -27,8 +27,8 @@ namespace LobbyCsharp.Web
         [OperationContract]
         void StartPlay(DTO.OPlayer hostPlayer);
 
-        [OperationContract]
-        DTO.OPlayer GetPlayer(int id);
+        /*[OperationContract]
+        DTO.OPlayer GetPlayer(int id);*/
 
         // 
         [OperationContract]
@@ -44,6 +44,14 @@ namespace LobbyCsharp.Web
         int NewId();
         [OperationContract]
         string whichGameState(string PlayerNameName);
+                
+        //
+        [OperationContract]
+        bool LoggIn(string Name, string Paswoord);
+
+        // select current player
+        [OperationContract]
+        DTO.OPlayer CurrentPlayer(string name);
 
     }
 }

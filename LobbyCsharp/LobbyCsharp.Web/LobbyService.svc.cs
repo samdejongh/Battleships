@@ -148,14 +148,14 @@ namespace LobbyCsharp.Web
         }
 
 
-        public DTO.OPlayer GetPlayer(int id)
+        /*public DTO.OPlayer GetPlayer(int id)
         {
             var pl = (from p in dc.Players
                       where p.PlayerId == id
                       select p).Single();
 
             return new DTO.OPlayer() { PlayerId = pl.PlayerId, PlayerName = pl.PlayerName };
-        }
+        }*/
 
         // Create Player functions
         public List<string> GetAllPlayers()
@@ -211,7 +211,39 @@ namespace LobbyCsharp.Web
                 gamestate = r.GameState;
             }
             return gamestate;
+        }
 
+        //login
+        public bool LoggIn(string Name, string Paswoord)
+        {
+            var players = from r in dc.Players
+                          where r.PlayerName == Name &&
+                                r.Password == Paswoord
+                          select r;
+            bool login;
+
+            if (players != null)
+            {
+                login = true;
+            }
+            else
+                login = false;
+           
+            return login;
+        }
+
+        //select current player
+        public DTO.OPlayer CurrentPlayer(string name)
+        {
+            var player = (from r in dc.Players
+                          where r.PlayerName == name
+                          select r).Single();
+            DTO.OPlayer CurrentPlayer = new DTO.OPlayer();
+            
+            CurrentPlayer.PlayerName = player.PlayerName;
+            CurrentPlayer.PlayerId = player.PlayerId;
+
+            return CurrentPlayer;
         }
 
 

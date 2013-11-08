@@ -19,6 +19,7 @@
       <Column Name="PlayerId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="PlayerName" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="GameState" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

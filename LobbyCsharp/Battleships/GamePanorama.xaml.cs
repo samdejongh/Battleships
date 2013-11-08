@@ -69,12 +69,17 @@ namespace Battleships
 
         }
 
+        /*
         //GET PLAYER (normaal maak je eerst een speler aan, nu hard coded in database)
         void client_GetPlayerCompleted(object sender, ServiceCloud.GetPlayerCompletedEventArgs e)
         {
             me = (ServiceCloud.OPlayer)e.Result;
-        }
-
+        }*/
+/*
+ * 
+ ********************************LOBBY********************************* 
+ * 
+*/
 
         //Welke playrooms zijn aangemaakt, waarbij iswaiting = true (maw. een host is hier aan het wachten)
         void client_GetAvailableLobbyRoomsCompleted(object sender, ServiceCloud.GetAvailableLobbyRoomsCompletedEventArgs e)
@@ -134,7 +139,11 @@ namespace Battleships
             }
             lstPlayerField.ItemsSource = YourField;
         }
-
+/*
+ * 
+ **************************************Register/LogIn************************************ 
+ * 
+*/
         private void btnCreatePlayer_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/createplayer.xaml", UriKind.Relative));
@@ -142,11 +151,34 @@ namespace Battleships
 
         private void btnUseExistingPlayer_Click(object sender, RoutedEventArgs e)
         {
-            client.GetAllPlayersCompleted += client_GetAllPlayersCompleted;
-            client.GetAllPlayersAsync();
+            /*client.GetAllPlayersCompleted += client_GetAllPlayersCompleted;
+            client.GetAllPlayersAsync();*/
+
+            client.LoggInCompleted += client_LoggInCompleted;
+            client.LoggInAsync(exstplyrbox.Text,passwordbox.Text);
+
         }
 
-        void client_GetAllPlayersCompleted(object sender, ServiceCloud.GetAllPlayersCompletedEventArgs e)
+        void client_LoggInCompleted(object sender, ServiceCloud.LoggInCompletedEventArgs e)
+        {
+            loggedin = e.Result;
+            if (loggedin == true)
+            {
+                MessageBox.Show("Logged In");
+                btnCheckforlobies.IsEnabled = true;
+                client.CurrentPlayerCompleted += client_CurrentPlayerCompleted;
+                
+                inlogscreen.IsEnabled = false;
+                lobbyscreen.IsEnabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Loggin Failed!");
+            }
+        }
+        
+
+       /* void client_GetAllPlayersCompleted(object sender, ServiceCloud.GetAllPlayersCompletedEventArgs e)
         {
             foreach (var item in e.Result)
             //ExistingPLayerList.Add(item.ToString());
@@ -155,13 +187,19 @@ namespace Battleships
                 if (item.Replace(" ", string.Empty) == exstplyrbox.Text)
                 {
                     MessageBox.Show("Logged In");
-
                     btnCheckforlobies.IsEnabled = true;
+                    client.CurrentPlayerCompleted += client_CurrentPlayerCompleted;                    
+                    
                 }
             }
+        }*/
+
+        void client_CurrentPlayerCompleted(object sender, ServiceCloud.CurrentPlayerCompletedEventArgs e)
+        {
+            me = (ServiceCloud.OPlayer)e.Result;            
         }
 
-        private void exstplyrbox_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        private void exstplyrbox_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
             exstplyrbox.Text = "";
         }

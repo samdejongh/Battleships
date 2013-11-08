@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LobbyCsharp.Web.Azure" generation="1" functional="0" release="0" Id="30bf66fd-1d40-4fba-bf79-3a5a80f416ad" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LobbyCsharp.Web.Azure" generation="1" functional="0" release="0" Id="432d12a8-a345-477e-a42a-e5d960b8adda" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="LobbyCsharp.Web.AzureGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -70,9 +70,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="10949e5a-f623-45cc-b097-906ce8f1fafa" ref="Microsoft.RedDog.Contract\ServiceContract\LobbyCsharp.Web.AzureContract@ServiceDefinition">
+    <implementation Id="60c2f83a-14a6-4386-b5e3-abf2f26061c7" ref="Microsoft.RedDog.Contract\ServiceContract\LobbyCsharp.Web.AzureContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="df07eaef-985a-4ee4-9b04-d710e5f0bdbe" ref="Microsoft.RedDog.Contract\Interface\LobbyCsharp.Web:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="62dc9a11-0407-4763-8750-9c8b933a110e" ref="Microsoft.RedDog.Contract\Interface\LobbyCsharp.Web:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/LobbyCsharp.Web.Azure/LobbyCsharp.Web.AzureGroup/LobbyCsharp.Web:Endpoint1" />
           </inPort>

@@ -15,6 +15,7 @@
   <xs:element name="OLobby" nillable="true" type="tns:OLobby" />
   <xs:complexType name="OPlayer">
     <xs:sequence>
+      <xs:element minOccurs="0" name="GameState" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="PlayerId" type="xs:int" />
       <xs:element minOccurs="0" name="PlayerName" nillable="true" type="xs:string" />
     </xs:sequence>

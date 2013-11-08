@@ -328,6 +328,8 @@ namespace LobbyCsharp.Web
 		
 		private string _GameState;
 		
+		private string _Password;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -338,6 +340,8 @@ namespace LobbyCsharp.Web
     partial void OnPlayerNameChanged();
     partial void OnGameStateChanging(string value);
     partial void OnGameStateChanged();
+    partial void OnPasswordChanging(string value);
+    partial void OnPasswordChanged();
     #endregion
 		
 		public Player()
@@ -401,6 +405,26 @@ namespace LobbyCsharp.Web
 					this._GameState = value;
 					this.SendPropertyChanged("GameState");
 					this.OnGameStateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Password", DbType="NChar(11)")]
+		public string Password
+		{
+			get
+			{
+				return this._Password;
+			}
+			set
+			{
+				if ((this._Password != value))
+				{
+					this.OnPasswordChanging(value);
+					this.SendPropertyChanging();
+					this._Password = value;
+					this.SendPropertyChanged("Password");
+					this.OnPasswordChanged();
 				}
 			}
 		}
