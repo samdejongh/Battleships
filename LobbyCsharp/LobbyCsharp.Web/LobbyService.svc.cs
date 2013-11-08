@@ -9,15 +9,6 @@ namespace LobbyCsharp.Web
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "LobbyService" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select LobbyService.svc or LobbyService.svc.cs at the Solution Explorer and start debugging.
-    public enum gamestate
-    {
-        NotLoggedIn,
-        LoggedIn,
-        InLobby,
-        PlayTurn,
-        WaitTurn
-    }
-    
     public class LobbyService : ILobbyService
     {
         private DataClasses1DataContext dc;
@@ -39,7 +30,7 @@ namespace LobbyCsharp.Web
             List<DTO.OLobby> lobbies = new List<DTO.OLobby>();
             foreach (var r in rooms)
             {
-                DTO.OLobby l = new DTO.OLobby() { LobbyId = r.LobbyId, LobbyName = r.LobbyName };
+                DTO.OLobby l  = new DTO.OLobby(){ LobbyId = r.LobbyId, LobbyName = r.LobbyName};
 
                 lobbies.Add(l);
 
@@ -62,7 +53,7 @@ namespace LobbyCsharp.Web
                 dc.PlayLobbies.InsertOnSubmit(pLobby);
                 dc.SubmitChanges();
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
             }
@@ -75,7 +66,7 @@ namespace LobbyCsharp.Web
                          join pl in dc.PlayLobbies
                          on l.LobbyId equals pl.LobbyId
                          where l.IsWaitingForPlayers == 1
-                         select new { l.LobbyId, l.LobbyName, pl.HostPlayer };
+                         select new {l.LobbyId, l.LobbyName, pl.HostPlayer};
 
 
 
@@ -100,7 +91,7 @@ namespace LobbyCsharp.Web
                 dc.PlayLobbies.InsertOnSubmit(pLobby);
                 dc.SubmitChanges();
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
             }
@@ -111,15 +102,15 @@ namespace LobbyCsharp.Web
 
             var lst = from l in dc.PlayLobbies
                       where l.HostPlayer == hostPlayer.PlayerId
-                      select new { l.LobbyId };
+                      select new {l.LobbyId};
 
 
             var update = (from l in dc.Lobbies
-                          where l.LobbyId == lst.Single().LobbyId
-                          select l).Single();
+                      where l.LobbyId == lst.Single().LobbyId
+                      select l).Single();
 
             update.IsWaitingForPlayers = 0;
-
+            
             dc.SubmitChanges();
 
         }
@@ -134,118 +125,29 @@ namespace LobbyCsharp.Web
         {
             try
             {
-                PlayLobby pLobby = new PlayLobby();
+                PlayLobby pLobby = new PlayLobby();               
                 pLobby.LobbyId = lobby;
                 pLobby.PlayerId = (int)player.PlayerId;
 
                 dc.PlayLobbies.InsertOnSubmit(pLobby);
                 dc.SubmitChanges();
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
             }
         }
 
 
-        /*public DTO.OPlayer GetPlayer(int id)
+        public DTO.OPlayer GetPlayer(int id)
         {
             var pl = (from p in dc.Players
-                      where p.PlayerId == id
-                      select p).Single();
+                         where p.PlayerId == id
+                         select p).Single();
 
             return new DTO.OPlayer() { PlayerId = pl.PlayerId, PlayerName = pl.PlayerName };
-        }*/
-
-        // Create Player functions
-        public List<string> GetAllPlayers()
-        {
-            var players = from r in dc.Players
-                          select r;
-            List<string> AllPlayersNames = new List<string>();
-            foreach (var r in players)
-            {
-
-                AllPlayersNames.Add(r.PlayerName);
-            }
-            return AllPlayersNames;
-        }
-
-
-        public int NewId()
-        {
-            int newid = ((from s in dc.Players
-                          select s.PlayerId).Max()) + 1;
-            return newid;
 
         }
-
-
-        public void AddNewPlayer(int PlayerId, string PlayerName)
-        {
-            try
-            {
-                Player newplayer = new Player();
-                newplayer.PlayerName = PlayerName;
-                newplayer.PlayerId = PlayerId;
-                
-
-                dc.Players.InsertOnSubmit(newplayer);
-                dc.SubmitChanges();
-            }
-            catch (Exception)
-            {
-            }
-        }
-        // Zien in welke gamestate de speler is
-        public string whichGameState(string PlayerNameName)
-        {
-            var players = from r in dc.Players
-                          where r.PlayerName == PlayerNameName
-                          select r;
-            string gamestate ="" ;
-
-            foreach (var r in players)
-            {
-
-                gamestate = r.GameState;
-            }
-            return gamestate;
-        }
-
-        //login
-        public bool LoggIn(string Name, string Paswoord)
-        {
-            var players = from r in dc.Players
-                          where r.PlayerName == Name &&
-                                r.Password == Paswoord
-                          select r;
-            bool login;
-
-            if (players != null)
-            {
-                login = true;
-            }
-            else
-                login = false;
-           
-            return login;
-        }
-
-        //select current player
-        public DTO.OPlayer CurrentPlayer(string name)
-        {
-            var player = (from r in dc.Players
-                          where r.PlayerName == name
-                          select r).Single();
-            DTO.OPlayer CurrentPlayer = new DTO.OPlayer();
-            
-            CurrentPlayer.PlayerName = player.PlayerName;
-            CurrentPlayer.PlayerId = player.PlayerId;
-
-            return CurrentPlayer;
-        }
-
 
     }
 }

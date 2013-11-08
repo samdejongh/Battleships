@@ -8,16 +8,11 @@ namespace LobbyCsharp.Web.DTO
 {
     [DataContract]
     public class OPlayer
-    {                                           
-        [DataMember]                            
-        public int PlayerId { get; set; }          
-        [DataMember]                            
-        public string PlayerName { get; set; }
+    {
         [DataMember]
-        public string GameState;
-        
+        public int PlayerId { get; set; }
 
-
-      
+        [DataMember]
+        public string PlayerName { get; set; }
     }
 }

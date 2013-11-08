@@ -23,9 +23,8 @@
     <MetadataSource Address="http://localhost:61363/LobbyService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="LobbyService3.xsd" MetadataType="Schema" ID="bc62dc87-65c6-4bfb-aa69-1a133bc96af1" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?xsd=xsd3" />
-    <MetadataFile FileName="LobbyService.xsd" MetadataType="Schema" ID="6d2e6832-9ea2-47b0-84ce-d801c3615ffe" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?xsd=xsd1" />
     <MetadataFile FileName="LobbyService.wsdl" MetadataType="Wsdl" ID="866bd4d0-3e1d-4dc3-9b90-5d550223fa29" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?wsdl" />
+    <MetadataFile FileName="LobbyService.xsd" MetadataType="Schema" ID="6d2e6832-9ea2-47b0-84ce-d801c3615ffe" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?xsd=xsd1" />
     <MetadataFile FileName="LobbyService.disco" MetadataType="Disco" ID="9e639211-8586-41e8-9015-673e4aba5692" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?disco" />
     <MetadataFile FileName="LobbyService1.xsd" MetadataType="Schema" ID="d5af01e9-0b0f-42c5-b923-e3b1ab47c32f" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?xsd=xsd0" />
     <MetadataFile FileName="LobbyService2.xsd" MetadataType="Schema" ID="ad2f710c-793b-4955-b16e-6ed3ad758ecb" SourceId="1" SourceUrl="http://localhost:61363/LobbyService.svc?xsd=xsd2" />

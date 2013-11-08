@@ -11,7 +11,7 @@ namespace LobbyCsharp.Web
     [ServiceContract]
     public interface ILobbyService
     {
-        // Lobby contracts
+        
         [OperationContract]
         List<DTO.OLobby> GetAvailableRooms();
 
@@ -27,31 +27,11 @@ namespace LobbyCsharp.Web
         [OperationContract]
         void StartPlay(DTO.OPlayer hostPlayer);
 
-        /*[OperationContract]
-        DTO.OPlayer GetPlayer(int id);*/
+        [OperationContract]
+        DTO.OPlayer GetPlayer(int id);
 
-        // 
         [OperationContract]
         DTO.GameObject SendGameUpdate(DTO.OPlayer player);
-
-        // Create Player Contracts
-
-        [OperationContract]
-        List<string> GetAllPlayers();
-        [OperationContract]
-        void AddNewPlayer(int PlayerId, string PlayerName);
-        [OperationContract]
-        int NewId();
-        [OperationContract]
-        string whichGameState(string PlayerNameName);
-                
-        //
-        [OperationContract]
-        bool LoggIn(string Name, string Paswoord);
-
-        // select current player
-        [OperationContract]
-        DTO.OPlayer CurrentPlayer(string name);
 
     }
 }

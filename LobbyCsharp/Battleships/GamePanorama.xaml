@@ -24,14 +24,12 @@
         <controls:Panorama Title="Battleships">
 
             <!--Panorama item one-->
-            <controls:PanoramaItem x:Name="inlogscreen" Header="Player screen" IsEnabled="true">
+            <controls:PanoramaItem Header="Player screen">
                 <Grid>
                     <StackPanel Grid.Row="0" Margin="12,17,0,28">
-                        <Button x:Name="btnCreatePlayer" Click="btnCreatePlayer_Click">Create Player</Button>
-                        <Button x:Name="btnUseExistingPlayer" Click="btnUseExistingPlayer_Click">Use existing player</Button>
-                        <TextBox x:Name="exstplyrbox" Text="Enter Player Name" Tap="exstplyrbox_Tap"></TextBox>
-                        <TextBox x:Name="passwordbox" Text="Enter Password" ></TextBox>
-
+                        <Button x:Name="btnCreatePlayer">Create Player</Button>
+                        <Button x:Name="btnUseExistingPlayer">Use existing player</Button>
+                        <TextBox Text="Enter Player Name"></TextBox>
                     </StackPanel>
                 </Grid>
             </controls:PanoramaItem>
@@ -40,10 +38,10 @@
 
 
             <!--Panorama item two-->
-            <controls:PanoramaItem x:Name="lobbyscreen" Header="Lobby room" IsEnabled="False">
+            <controls:PanoramaItem Header="Lobby room">
                 <Grid>
                     <StackPanel Grid.Row="0">
-                        <Button x:Name="btnCheckforlobies" Click="btnCheckforlobies_Click" IsEnabled="False">Check for lobies</Button>
+                        <Button x:Name="btnCheckforlobies" Click="btnCheckforlobies_Click">Check for lobies</Button>
                         <TextBox Text="Available rooms" ></TextBox>
                         <ListBox x:Name="lstPlayRooms" Height="150">
                         <ListBox.ItemTemplate>
@@ -61,7 +59,7 @@
             </controls:PanoramaItem>
             
             <!--Panorama item three-->
-            <controls:PanoramaItem x:Name="gamescreen" Header="Your field" IsEnabled="False">
+            <controls:PanoramaItem Header="Your field">
                 <Grid>
                     <ListBox x:Name="lstPlayerField" Height="400" Width="400" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                         <ListBox.ItemTemplate>
@@ -83,7 +81,7 @@
             </controls:PanoramaItem>
 
             <!--Panorama item four-->
-            <controls:PanoramaItem IsEnabled="False" x:Name="gamescreen2" Header="Enemy's field">
+            <controls:PanoramaItem Header="Enemy's field">
             </controls:PanoramaItem>
 
         </controls:Panorama>

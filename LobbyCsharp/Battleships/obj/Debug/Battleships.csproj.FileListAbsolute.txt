@@ -36,7 +36,6 @@ D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Bin\Debug\ru-RU\M
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Bin\Debug\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Bin\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
-<<<<<<< HEAD
 D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Bin\Debug\ApplicationIcon.png
 D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Bin\Debug\Background.png
 D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Bin\Debug\Battleships.dll
@@ -75,44 +74,3 @@ D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\obj\Debug\Battleships.g.
 D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\obj\Debug\Battleships.dll
 D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\obj\Debug\Battleships.pdb
 D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\obj\Debug\XapCacheFile.xml
-=======
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\ApplicationIcon.png
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\Background.png
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\Battleships.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\Battleships.pdb
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\AppManifest.xaml
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\Battleships.xap
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\Microsoft.Phone.Controls.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\Microsoft.Phone.Controls.xml
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\cs-CZ\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\da-DK\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\de-DE\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\el-GR\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\en-GB\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\es-ES\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\fi-FI\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\fr-FR\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\hu-HU\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\id-ID\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\it-IT\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\ja-JP\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\ko-KR\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\ms-MY\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\nb-NO\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\nl-NL\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\pl-PL\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\pt-BR\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\ru-RU\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\sv-SE\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\zh-CN\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\Bin\Debug\zh-TW\Microsoft.Phone.Controls.Toolkit.resources.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\App.g.cs
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\createplayer.g.cs
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\GamePanorama.g.cs
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\Battleships.g.resources
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\Battleships.dll
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\Battleships.pdb
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\XapCacheFile.xml
-C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\Battleships\obj\Debug\Battleships.csprojResolveAssemblyReference.cache
->>>>>>> refs/remotes/origin/Vincent

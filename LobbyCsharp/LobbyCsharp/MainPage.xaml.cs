@@ -17,16 +17,13 @@ namespace LobbyCsharp
         ServiceReference1.LobbyServiceClient client;
 
         ServiceReference1.OPlayer me;
-        public List<string> ExestingPLayerList { get; set; }
+        
 
         public MainPage()
         {
             InitializeComponent();
-            ExestingPLayerList = new List<string>();
-            client = new ServiceReference1.LobbyServiceClient();
 
-            client.GetAllPlayersCompleted+=client_GetAllPlayersCompleted;
-            client.GetAllPlayersAsync();
+            client = new ServiceReference1.LobbyServiceClient();
             
             
             client.GetPlayerCompleted += client_GetPlayerCompleted;
@@ -38,12 +35,6 @@ namespace LobbyCsharp
 
             client.GetAvailableLobbyRoomsCompleted += client_GetAvailableLobbyRoomsCompleted;
             client.GetAvailableLobbyRoomsAsync();
-        }
-
-        void client_GetAllPlayersCompleted(object sender, ServiceReference1.GetAllPlayersCompletedEventArgs e)
-        {
-            foreach (var item in e.Result)
-                ExestingPLayerList.Add(item.ToString());
         }
 
 
