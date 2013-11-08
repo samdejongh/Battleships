@@ -43,7 +43,14 @@
                     <StackPanel Grid.Row="0">
                         <Button x:Name="btnCheckforlobies" Click="btnCheckforlobies_Click">Check for lobies</Button>
                         <TextBox Text="Available rooms" ></TextBox>
-                        <ListBox x:Name="lstPlayRooms" Height="150"></ListBox>
+                        <ListBox x:Name="lstPlayRooms" Height="150">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+
+                                <TextBlock Width="400" Height="40" Text="{Binding LobbyName}" ></TextBlock>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        </ListBox>
                         <TextBox Text="Member in currently selected room"></TextBox>
                         <ListBox x:Name="lstGameMembers" Height="150">
                         </ListBox>

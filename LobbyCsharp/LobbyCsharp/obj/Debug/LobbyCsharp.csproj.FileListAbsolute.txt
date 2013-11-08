@@ -21,3 +21,15 @@ D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCs
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.dll
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.pdb
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp\obj\Debug\XapCacheFile.xml
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.dll
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.pdb
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\AppManifest.xaml
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.xap
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharpTestPage.html
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.csprojResolveAssemblyReference.cache
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\App.g.cs
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\MainPage.g.cs
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.g.resources
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.dll
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.pdb
+D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\XapCacheFile.xml

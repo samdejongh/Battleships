@@ -1,25 +1,25 @@
-﻿<xapCache source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Bin\Debug\Battleships.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="5/11/2013 10:44:59">
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="4/11/2013 14:53:34" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\GameLogo.png" archivePath="GameLogo.png" lastWriteTime="4/11/2013 15:33:39" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\GameLogo.png" archivePath="GameLogo.png" lastWriteTime="4/11/2013 15:33:39" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\obj\Debug\Battleships.dll" archivePath="Battleships.dll" lastWriteTime="5/11/2013 10:44:59" />
+﻿<xapCache source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Bin\Debug\Battleships.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="8/11/2013 10:04:16">
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="4/11/2013 14:53:34" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\GameLogo.png" archivePath="GameLogo.png" lastWriteTime="4/11/2013 15:33:39" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\GameLogo.png" archivePath="GameLogo.png" lastWriteTime="4/11/2013 15:33:39" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\obj\Debug\Battleships.dll" archivePath="Battleships.dll" lastWriteTime="8/11/2013 10:04:15" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="6/07/2012 2:40:16" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\packages\WPtoolkit.4.2013.08.16\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="5/11/2013 10:43:55" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="5/11/2013 10:43:56" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="5/11/2013 10:43:56" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="5/11/2013 10:43:56" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="5/11/2013 10:43:56" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="5/11/2013 10:43:56" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="5/11/2013 10:43:56" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\wallpaper.png" archivePath="wallpaper.png" lastWriteTime="2/11/2013 13:18:30" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\wallpaper2.png" archivePath="wallpaper2.png" lastWriteTime="4/11/2013 15:35:26" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\wallpaper3.png" archivePath="wallpaper3.png" lastWriteTime="4/11/2013 15:43:12" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Water.png" archivePath="Water.png" lastWriteTime="4/11/2013 18:16:22" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="22/10/2013 12:13:26" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="22/10/2013 11:24:34" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Background.png" archivePath="Background.png" lastWriteTime="22/10/2013 11:24:34" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="22/10/2013 11:24:34" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="5/11/2013 10:44:59" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="22/10/2013 11:24:34" />
-  <file source="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\Battleships\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="22/10/2013 11:24:34" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\packages\WPtoolkit.4.2013.08.16\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="5/11/2013 10:43:55" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\README_FIRST.txt" archivePath="README_FIRST.txt" lastWriteTime="5/11/2013 10:43:56" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Toolkit.Content\ApplicationBar.Add.png" archivePath="Toolkit.Content\ApplicationBar.Add.png" lastWriteTime="5/11/2013 10:43:56" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Toolkit.Content\ApplicationBar.Cancel.png" archivePath="Toolkit.Content\ApplicationBar.Cancel.png" lastWriteTime="5/11/2013 10:43:56" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Toolkit.Content\ApplicationBar.Check.png" archivePath="Toolkit.Content\ApplicationBar.Check.png" lastWriteTime="5/11/2013 10:43:56" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Toolkit.Content\ApplicationBar.Delete.png" archivePath="Toolkit.Content\ApplicationBar.Delete.png" lastWriteTime="5/11/2013 10:43:56" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Toolkit.Content\ApplicationBar.Select.png" archivePath="Toolkit.Content\ApplicationBar.Select.png" lastWriteTime="5/11/2013 10:43:56" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\wallpaper.png" archivePath="wallpaper.png" lastWriteTime="2/11/2013 13:18:30" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\wallpaper2.png" archivePath="wallpaper2.png" lastWriteTime="4/11/2013 15:35:26" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\wallpaper3.png" archivePath="wallpaper3.png" lastWriteTime="4/11/2013 15:43:12" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Water.png" archivePath="Water.png" lastWriteTime="4/11/2013 18:16:22" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="22/10/2013 12:13:26" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="22/10/2013 11:24:34" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Background.png" archivePath="Background.png" lastWriteTime="22/10/2013 11:24:34" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="22/10/2013 11:24:34" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="5/11/2013 10:44:59" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="22/10/2013 11:24:34" />
+  <file source="D:\Dropbox\MM systems 5\Working\LobbyCsharp\Battleships\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="22/10/2013 11:24:34" />
 </xapCache>

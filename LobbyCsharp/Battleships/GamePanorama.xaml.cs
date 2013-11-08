@@ -27,7 +27,6 @@ namespace Battleships
         public GamePanorama()
         {
             InitializeComponent();
-
     
         }
 
@@ -56,7 +55,8 @@ namespace Battleships
         private void btnCheckforlobies_Click(object sender, RoutedEventArgs e)
         {
 
-            client.GetAvailableLobbyRoomsAsync();
+            client.GetAvailableRoomsCompleted += client_GetAvailableRoomsCompleted;
+            client.GetAvailableRoomsAsync();
 
         }
 
@@ -82,7 +82,6 @@ namespace Battleships
         {
             List<LobbyService.OLobby> lobbyList = e.Result.ToList();
             lstPlayRooms.ItemsSource = lobbyList;
-
         }
 
 
@@ -116,7 +115,6 @@ namespace Battleships
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
             client = new LobbyService.LobbyServiceClient();
-            client.GetAvailableLobbyRoomsCompleted += client_GetAvailableLobbyRoomsCompleted;
             YourField = new ObservableCollection<Field>();
             for (int i = 1; i < 100; i++)
             {
