@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LobbyCsharp.Web.Azure" generation="1" functional="0" release="0" Id="20f8c1f2-106a-4939-92af-2d578520ea57" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
+<serviceModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LobbyCsharp.Web.Azure" generation="1" functional="0" release="0" Id="5a5d607a-912d-44fe-abc4-20cfaca6dad6" dslVersion="1.2.0.0" xmlns="http://schemas.microsoft.com/dsltools/RDSM">
   <groups>
     <group name="LobbyCsharp.Web.AzureGroup" generation="1" functional="0" release="0">
       <componentports>
@@ -42,7 +42,7 @@
       </maps>
       <components>
         <groupHascomponents>
-          <role name="LobbyCsharp.Web" generation="1" functional="0" release="0" software="D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web.Azure\csx\Release\roles\LobbyCsharp.Web" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="1792" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
+          <role name="LobbyCsharp.Web" generation="1" functional="0" release="0" software="C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp.Web.Azure\csx\Release\roles\LobbyCsharp.Web" entryPoint="base\x64\WaHostBootstrapper.exe" parameters="base\x64\WaIISHost.exe " memIndex="1792" hostingEnvironment="frontendadmin" hostingEnvironmentVersion="2">
             <componentports>
               <inPort name="Endpoint1" protocol="http" portRanges="80" />
             </componentports>
@@ -70,9 +70,9 @@
     </group>
   </groups>
   <implements>
-    <implementation Id="2faddb07-f44d-405f-afa6-079ea8e868df" ref="Microsoft.RedDog.Contract\ServiceContract\LobbyCsharp.Web.AzureContract@ServiceDefinition">
+    <implementation Id="3265cb0b-ff71-4495-b742-b95dec33beff" ref="Microsoft.RedDog.Contract\ServiceContract\LobbyCsharp.Web.AzureContract@ServiceDefinition">
       <interfacereferences>
-        <interfaceReference Id="88fe4f12-36a2-4674-8421-0d8fa129d76d" ref="Microsoft.RedDog.Contract\Interface\LobbyCsharp.Web:Endpoint1@ServiceDefinition">
+        <interfaceReference Id="12be3a1b-fe1f-4bcb-ba3d-987e93169771" ref="Microsoft.RedDog.Contract\Interface\LobbyCsharp.Web:Endpoint1@ServiceDefinition">
           <inPort>
             <inPortMoniker name="/LobbyCsharp.Web.Azure/LobbyCsharp.Web.AzureGroup/LobbyCsharp.Web:Endpoint1" />
           </inPort>
