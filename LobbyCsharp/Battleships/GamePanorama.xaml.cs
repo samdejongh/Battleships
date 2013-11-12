@@ -33,6 +33,8 @@ namespace Battleships
         public bool loggedin { get; set; }
         public bool newhost { get; set; }
         public List<ServiceCloud.OLobby> lobbyList = new List<ServiceCloud.OLobby>();
+        public string welkelobby { get; set; }
+        public int welkelobbyid { get; set; }
 
         // Constructor
         public GamePanorama()
@@ -147,12 +149,10 @@ namespace Battleships
         }
         private void click_enterlobby(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            int welkelobbyid;
-            string welkelobby;
             welkelobby = lstPlayRooms.SelectedValue.ToString();
             foreach (var item in lobbyList)
             {
-                if (welkelobby = item.LobbyName)
+                if (welkelobby == item.LobbyName)
                 {
                     welkelobbyid = item.LobbyId;
                 }
@@ -163,16 +163,7 @@ namespace Battleships
         }
         private void TextBlock_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            int welkelobby;
-            foreach (var item in lobbyList)
-            {
-                if(this.Content = item.LobbyName)
-                {
-                    welkelobby = item.LobbyId;
-                }
-            }
-           client.SubscribeToLobbyRoomCompleted+=client_SubscribeToLobbyRoomCompleted;
-           client.SubscribeToLobbyRoomAsync(me,welkelobby,0);
+          
         }
 
         void client_newlobbyidCompleted(object sender, ServiceCloud.newlobbyidCompletedEventArgs e)

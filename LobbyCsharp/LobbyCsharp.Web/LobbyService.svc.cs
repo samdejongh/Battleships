@@ -253,5 +253,83 @@ namespace LobbyCsharp.Web
         }
 
 
+
+        List<DTO.OLobby> ILobbyService.GetAvailableRooms()
+        {
+            throw new NotImplementedException();
+        }
+
+        void ILobbyService.CreatePlayLobby(DTO.OPlayer host, int lobby)
+        {
+            throw new NotImplementedException();
+        }
+
+        List<DTO.OLobbyRoom> ILobbyService.GetAvailableLobbyRooms()
+        {
+            throw new NotImplementedException();
+        }
+
+        void ILobbyService.SubscribeToLobbyRoom(DTO.OPlayer player, int lobby, int host)
+        {
+            throw new NotImplementedException();
+        }
+
+        void ILobbyService.StartPlay(DTO.OPlayer hostPlayer)
+        {
+            throw new NotImplementedException();
+        }
+
+        int ILobbyService.newlobbyid()
+        {
+            throw new NotImplementedException();
+        }
+
+        DTO.GameObject ILobbyService.SendGameUpdate(DTO.OPlayer player)
+        {
+            throw new NotImplementedException();
+        }
+
+        List<string> ILobbyService.GetAllPlayers()
+        {
+            throw new NotImplementedException();
+        }
+
+        void ILobbyService.AddNewPlayer(int PlayerId, string PlayerName)
+        {
+            throw new NotImplementedException();
+        }
+
+        int ILobbyService.NewId()
+        {
+            throw new NotImplementedException();
+        }
+
+        string ILobbyService.whichGameState(string PlayerNameName)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool ILobbyService.LoggIn(string Name, string Paswoord)
+        {
+            throw new NotImplementedException();
+        }
+
+        DTO.OPlayer ILobbyService.CurrentPlayer(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        void ILobbyService.DeleteLobby(int id)
+        {
+            var query = (from i in dc.Lobbies where id == i.LobbyId select i);
+
+            foreach (var del in query)
+            {
+                dc.Lobbies.DeleteOnSubmit(del);
+            }
+
+
+                dc.SubmitChanges();
+        }
     }
 }

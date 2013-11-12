@@ -55,5 +55,8 @@ namespace LobbyCsharp.Web
         [OperationContract]
         DTO.OPlayer CurrentPlayer(string name);
 
+        [OperationContract]
+        void DeleteLobby(int id);
+
     }
 }

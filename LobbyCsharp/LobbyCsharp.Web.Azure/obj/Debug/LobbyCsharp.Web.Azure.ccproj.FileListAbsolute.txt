@@ -4,3 +4,5 @@ C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web.Azure\
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web.Azure\bin\Debug\ServiceDefinition.csdef
 C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp.Web.Azure\bin\Debug\ServiceConfiguration.cscfg
 C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp.Web.Azure\bin\Debug\ServiceDefinition.csdef
+C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web.Azure\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web.Azure\bin\Debug\ServiceDefinition.csdef
