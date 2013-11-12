@@ -21,32 +21,6 @@ D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCs
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.dll
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.pdb
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp\obj\Debug\XapCacheFile.xml
-<<<<<<< HEAD
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.pdb
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\AppManifest.xaml
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.xap
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharpTestPage.html
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.csprojResolveAssemblyReference.cache
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\App.g.cs
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\MainPage.g.cs
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.g.resources
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.pdb
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp\obj\Debug\XapCacheFile.xml
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.pdb
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\Bin\Debug\AppManifest.xaml
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.xap
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharpTestPage.html
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.csprojResolveAssemblyReference.cache
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\App.g.cs
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\MainPage.g.cs
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.g.resources
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.pdb
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\XapCacheFile.xml
-=======
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.dll
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp\Bin\Debug\LobbyCsharp.pdb
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp\Bin\Debug\AppManifest.xaml
@@ -70,4 +44,3 @@ C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCs
 C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.dll
 C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\LobbyCsharp.pdb
 C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp\obj\Debug\XapCacheFile.xml
->>>>>>> 92a2076... Rebased git

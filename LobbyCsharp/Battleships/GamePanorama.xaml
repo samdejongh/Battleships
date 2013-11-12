@@ -46,16 +46,6 @@
                         <Button x:Name="btnCheckforlobies" Click="btnCheckforlobies_Click">Check for lobies</Button>
                         <TextBox Text="Available rooms" ></TextBox>
                         <ListBox x:Name="lstPlayRooms" Height="150">
-<<<<<<< HEAD
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-
-                                <TextBlock Width="400" Height="40" Text="{Binding LobbyName}" ></TextBlock>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                        </ListBox>
-                        <TextBox Text="Member in currently selected room"></TextBox>
-=======
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <TextBlock Width="400" Height="40" Text="{Binding LobbyName}" Tap="TextBlock_Tap"></TextBlock>
@@ -63,7 +53,6 @@
                             </ListBox.ItemTemplate>
                         </ListBox>
                         <Button Click="click_enterlobby">Enter Lobby</Button>
->>>>>>> 92a2076... Rebased git
                         <ListBox x:Name="lstGameMembers" Height="150">
                         </ListBox>
                         </StackPanel>

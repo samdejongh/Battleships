@@ -38,11 +38,7 @@ namespace Battleships
         public GamePanorama()
         {
             InitializeComponent();
-<<<<<<< HEAD
-    
-=======
             ExistingPLayerList = new List<string>();
->>>>>>> 92a2076... Rebased git
         }
 
         public class Field
@@ -80,11 +76,6 @@ namespace Battleships
  * 
 */
 
-<<<<<<< HEAD
-            client.GetAvailableRoomsCompleted += client_GetAvailableRoomsCompleted;
-            client.GetAvailableRoomsAsync();
-=======
->>>>>>> 92a2076... Rebased git
 
         private void btnCheckforlobies_Click(object sender, RoutedEventArgs e)
         {
@@ -106,15 +97,12 @@ namespace Battleships
         {
             lobbyList = e.Result.ToList();
             lstPlayRooms.ItemsSource = lobbyList;
-<<<<<<< HEAD
-=======
 
             if (lobbyList.Count == 0)
             {
                 client.newlobbyidCompleted+=client_newlobbyidCompleted;
                 client.newlobbyidAsync();
             }
->>>>>>> 92a2076... Rebased git
         }
 
 
@@ -147,12 +135,8 @@ namespace Battleships
 
         private void PhoneApplicationPage_Loaded(object sender, RoutedEventArgs e)
         {
-<<<<<<< HEAD
-            client = new LobbyService.LobbyServiceClient();
-=======
             client = new ServiceCloud.LobbyServiceClient();
             client.GetAvailableLobbyRoomsCompleted += client_GetAvailableLobbyRoomsCompleted;
->>>>>>> 92a2076... Rebased git
             YourField = new ObservableCollection<Field>();
             for (int i = 1; i < 100; i++)
             {

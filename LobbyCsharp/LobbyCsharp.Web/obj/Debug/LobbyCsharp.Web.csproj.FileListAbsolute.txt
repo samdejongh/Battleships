@@ -47,96 +47,6 @@ D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hant\S
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.dll
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.pdb
 D:\Dropbox\MM systems 5\Gamelobby Demo\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.csprojResolveAssemblyReference.cache
-<<<<<<< HEAD
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\LobbyCsharp.Web.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\LobbyCsharp.Web.pdb
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.Data.Edm.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.Data.OData.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Configuration.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Storage.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\System.Spatial.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.Data.Edm.xml
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.Data.OData.xml
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Storage.xml
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\System.Spatial.xml
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\de\Microsoft.Data.Edm.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\es\Microsoft.Data.Edm.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\fr\Microsoft.Data.Edm.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\it\Microsoft.Data.Edm.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\ja\Microsoft.Data.Edm.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\ko\Microsoft.Data.Edm.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\ru\Microsoft.Data.Edm.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\de\Microsoft.Data.OData.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\es\Microsoft.Data.OData.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\fr\Microsoft.Data.OData.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\it\Microsoft.Data.OData.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\ja\Microsoft.Data.OData.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\ko\Microsoft.Data.OData.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\ru\Microsoft.Data.OData.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hans\Microsoft.Data.OData.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hant\Microsoft.Data.OData.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\de\System.Spatial.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\es\System.Spatial.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\fr\System.Spatial.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\it\System.Spatial.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\ja\System.Spatial.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\ko\System.Spatial.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\ru\System.Spatial.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hans\System.Spatial.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hant\System.Spatial.resources.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.csprojResolveAssemblyReference.cache
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.dll
-D:\Dropbox\MM systems 5\Working\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.pdb
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\LobbyCsharp.Web.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\LobbyCsharp.Web.pdb
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.Data.Edm.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.Data.OData.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Configuration.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Storage.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\System.Spatial.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Diagnostics.StorageUtility.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.Data.Edm.xml
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.Data.OData.xml
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\Microsoft.WindowsAzure.Storage.xml
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\System.Spatial.xml
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\de\Microsoft.Data.Edm.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\es\Microsoft.Data.Edm.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\fr\Microsoft.Data.Edm.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\it\Microsoft.Data.Edm.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ja\Microsoft.Data.Edm.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ko\Microsoft.Data.Edm.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ru\Microsoft.Data.Edm.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\de\Microsoft.Data.OData.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\es\Microsoft.Data.OData.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\fr\Microsoft.Data.OData.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\it\Microsoft.Data.OData.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ja\Microsoft.Data.OData.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ko\Microsoft.Data.OData.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ru\Microsoft.Data.OData.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hans\Microsoft.Data.OData.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hant\Microsoft.Data.OData.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\de\System.Spatial.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\es\System.Spatial.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\fr\System.Spatial.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\it\System.Spatial.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ja\System.Spatial.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ko\System.Spatial.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\ru\System.Spatial.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hans\System.Spatial.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hant\System.Spatial.resources.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.csprojResolveAssemblyReference.cache
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.dll
-C:\Users\Sam De Jongh\Documents\GitHub\Battleships\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.pdb
-=======
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.dll
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.pdb
 C:\Users\Martyna\Documents\github\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\LobbyCsharp.Web.dll
@@ -232,4 +142,3 @@ C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp.Web\bin\zh-Hant\S
 C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.csprojResolveAssemblyReference.cache
 C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.dll
 C:\Users\Martyna\Documents\Battleships\LobbyCsharp\LobbyCsharp.Web\obj\Debug\LobbyCsharp.Web.pdb
->>>>>>> 92a2076... Rebased git
